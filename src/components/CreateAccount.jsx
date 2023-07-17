@@ -1,11 +1,51 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import logo from '../assets/logo.png';
+import bgimage from '../assets/loginPageBg.png';
 
 const CreateAccount = () => {
-  return (
-    <div name='createAccount' className='bg-blue-100'>
-      hello
-      </div>
-  )
-}
+  const navigate = useNavigate();
 
-export default CreateAccount
+  const handleCreateAccount = (e) => {
+    e.preventDefault();
+
+    // Placeholder create account logic
+
+    // Navigate to the login page
+    navigate('/login');
+  };
+
+  return (
+    <div name="createAccount" className="w-full h-screen">
+      <div
+        className="flex justify-center items-center h-[30vh]"
+        style={{
+          backgroundImage: `url(${bgimage})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        }}
+      >
+        <img src={logo} alt="" style={{ width: '300px' }} />
+      </div>
+
+      <div className="flex justify-center items-center flex-col h-[70vh] bg-[#FBE470]">
+        <form className="flex flex-col items-center" onSubmit={handleCreateAccount}>
+          <h2>Create Account</h2>
+          <input type="email" placeholder="Email Address" required className="inputField m-[5px] p-[5px]" />
+          <input type="text" placeholder="Username" required className="inputField m-[5px] p-[5px]" />
+          <input type="password" placeholder="Password" required className="inputField m-[5px] p-[5px]" />
+          <input type="password" placeholder="Confirm Password" required className="inputField m-[5px] p-[5px]" />
+          <button type="submit" className="bg-[#6F87BE] hover:border-black border border-blue-600 text-white rounded-full py-2 px-4 w-56 my-4">
+            Create Account
+          </button>
+          <p>
+            Already have an account? <a href="login">Login</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default CreateAccount;
