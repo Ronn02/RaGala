@@ -5,8 +5,8 @@ const Navbar = () => {
     <div>
       <div className='flex  items-center justify-evenly  '>
 
-      <a href="/"> <br />Home</a>
-      <a href="test"> <br />Test</a>
+      <a href="/"> </a>
+      
       </div>
 
 
