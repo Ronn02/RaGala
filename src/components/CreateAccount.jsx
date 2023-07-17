@@ -2,7 +2,9 @@ import React from 'react'
 
 const CreateAccount = () => {
   return (
-    <div name='createAccount'>CreateAccount</div>
+    <div name='createAccount' className='bg-blue-100'>
+      hello
+      </div>
   )
 }
 
