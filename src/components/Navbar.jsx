@@ -3,9 +3,9 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div>
-      <div className='flex  items-center justify-evenly  '>
+      <div className='flex  items-center  '>
 
-      <a href="/"> </a>
+      <a href="/">hello</a>
       
       </div>
 
