@@ -48,9 +48,9 @@ const Home = () => {
       <p>Start exploring now and plan your next memorable trip!</p>
       </div>  
       {/*Container */}
-      <div className=' grid grid-cols-1 sm:grid-cols-3 gap-3 text-center py-8 ml-[30px] mr-[30px]'>
+      <div className=' grid grid-cols-1 sm:grid-cols-3 gap-3 text-center py-8 items-center ml-[30px] mr-[30px]'>
 
-      <a href=""><div className='relative h-[250px] w-[380px] '>
+      <a href=""><div className='relative h-[250px] max-w-[350px] '>
         <img src={Cavite} alt="" className="object-cover h-full w-full" />
         <div className="absolute top-0 left-0 h-full w-full flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
           <h2 className="text-2xl sm:text-3xl font-bold">CAVITE</h2>
@@ -59,7 +59,7 @@ const Home = () => {
       </div></a>
 
 
-      <a href=""><div className='relative h-[250px] w-[380px] '>
+      <a href=""><div className='relative h-[250px] max-w-[350px]  '>
         <img src={Laguna} alt="" className="object-cover h-full w-full" />
         <div className="absolute top-0 left-0 h-full w-full flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
           <h2 className="text-2xl sm:text-3xl font-bold">LAGUNA</h2>
@@ -68,7 +68,7 @@ const Home = () => {
       </div></a>
 
 
-      <a href=""><div className='relative h-[250px] w-[380px] '>
+      <a href=""><div className='relative h-[250px] max-w-[350px] '>
         <img src={Batangas} alt="" className="object-cover h-full w-full" />
         <div className="absolute top-0 left-0 h-full w-full flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
           <h2 className="text-2xl sm:text-3xl font-bold">BATANGAS</h2>
@@ -76,7 +76,7 @@ const Home = () => {
         </div>
       </div></a>
 
-      <a href=""><div className='relative h-[250px] w-[380px] '>
+      <a href=""><div className='relative h-[250px] max-w-[350px] '>
         <img src={Rizal} alt="" className="object-cover h-full w-full" />
         <div className="absolute top-0 left-0 h-full w-full flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
           <h2 className="text-2xl sm:text-3xl font-bold">RIZAL</h2>
@@ -84,7 +84,7 @@ const Home = () => {
         </div>
       </div></a>
 
-      <a href=""><div className='relative h-[250px] w-[380px] '>
+      <a href=""><div className='relative h-[250px] max-w-[350px] '>
         <img src={Quezon} alt="" className="object-cover h-full w-full" />
         <div className="absolute top-0 left-0 h-full w-full flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
           <h2 className="text-2xl sm:text-3xl font-bold">QUEZON</h2>
