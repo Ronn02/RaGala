@@ -48,7 +48,7 @@ const Home = () => {
       <p>Start exploring now and plan your next memorable trip!</p>
       </div>  
       {/*Container */}
-      <div className=' grid grid-cols-1 sm:grid-cols-3 gap-3 text-center py-8 items-center ml-[30px] mr-[30px]'>
+      <div className=' grid grid-cols-1 sm:grid-cols-3 gap-3 text-center py-8  p-[30px]'>
 
       <a href=""><div className='relative h-[250px] max-w-[350px] '>
         <img src={Cavite} alt="" className="object-cover h-full w-full" />
